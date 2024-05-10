@@ -1,6 +1,10 @@
 # Custom ID
 
+Forked from [github.com/fazlulkarimweb/custom-id](https://github.com/fazlulkarimweb/custom-id)
+
 A tiny, unique but customizable,🤠 human-friendly but secure, encrypted but beautiful,🐱‍🐉intuitive string ID generator for JavaScript 🎉🎉
+
+
 
 ## Inspiration
 
@@ -64,7 +68,7 @@ As it's human-friendly you can use it as **an OTP(one-time password), transactio
 You can generate an ID instantly by giving **an empty object as the argument**. 👀👀👀
 
 ```js
-var customId = require("custom-id");
+var customId = require("n-custom-id");
 
 customId({}); // Voila... A random 8 character string will be generated automatically
 ```
@@ -74,8 +78,6 @@ The custom ID will be generated in this format -
 ✌✌** 2 Number + 2 Letter + 2 Number + 2 Letter = 8 characters ** ✌✌
 
 All those number and letter will be generated randomly. We use cryptography to generate ids (if available).
-
-![client-id example](https://i.ibb.co/qdpTBXt/Screenshot-269.png)
 
 # Customizable
 

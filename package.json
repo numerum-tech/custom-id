@@ -1,10 +1,20 @@
 {
     "name": "custom-id",
-    "author": "Md Fazlul Karim <fazlulkarimrocky@gmail.com> (https://twitter.com/fazlulkarimweb)",
+    "author": "Md Fazlul Karim <fazlulkarimrocky@gmail.com> (https://twitter.com/fazlulkarimweb)  - fork by Numerum Tech",
+    "contibutors": [
+        {
+            "name": "Numerum Tech",
+            "email": "numerums@gmail.com",
+            "url": "https://github.com/numerum-tech"
+        }
+    ],
     "description": "A tiny, unique but customizable,🤠 human-friendly but secure, encrypted but beautiful,🐱‍🐉intuitive string ID generator for JavaScript 🎉🎉",
     "version": "1.2.1",
     "main": "index.js",
-    "repository": "github:numerum-tech/custom-id",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/numerum-tech/custom-id.git"
+    },
     "license": "MIT",
     "scripts": {
         "test": "jest"
@@ -25,7 +35,8 @@
         "transaction key"
     ],
     "dependencies": {
-        "math-random": "^2.0.1"
+        "math-random": "^2.0.1",
+        "user": "^0.0.0"
     },
     "devDependencies": {
         "jest": "^29.7.0"
