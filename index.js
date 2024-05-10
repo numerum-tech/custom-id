@@ -62,7 +62,7 @@ module.exports = function customId(customId) {
     let prefix = customId.prefix ? customId.prefix : '';
     let sufix = customId.sufix ? customId.sufix : '';
 
-    if (customId.alphaFirst) {
+    if (customId.alphaFirst === true) {
         var result = prefix + name + firstId + name + lastId + sufix;
     } else {
         var result = prefix + firstId + name + lastId + email + sufix;

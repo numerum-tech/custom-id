@@ -21,7 +21,7 @@ describe("Is it a prefixed id string?", () => {
         prefix: 'PRFX'
     });
 
-    console.log('Generated -->> ', custom);
+    //console.log('Generated -->> ', custom);
 
     const expected = custom;
     it("Yeah, dude ... It starts with PRF", () => {
@@ -37,7 +37,7 @@ describe("Is it a sufixed id string?", () => {
         sufix: 'SFX'
     });
 
-    console.log('Generated -->> ', custom);
+    //console.log('Generated -->> ', custom);
 
     const expected = custom;
     it("Yeah, dude ... It ends with PRF", () => {
@@ -53,7 +53,7 @@ describe("Is it started with alphabetic chars?", () => {
         alphaFirst: true
     });
 
-    console.log('Generated -->> ', custom);
+    //console.log('Generated -->> ', custom);
 
     const expected = custom;
     it("Yeah, dude ... It starts with alpha chars", () => {

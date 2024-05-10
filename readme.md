@@ -6,25 +6,58 @@ A tiny, unique but customizable,🤠 human-friendly but secure, encrypted but be
 
 It is built for both human and machine. We use familiar letters (from given name & email) in our randomly generated ID. **People can easily recognize those familiar letters as they use it every time, everyday, every moment.** You can randomly generate IDs with uuid or nanoid, but these are not generated for human. These are for machine. But this library is for both of them.
 
-# Use Case
+## Wy this fork?
 
-As it's human-friendly you can use it as **an OTP(one-time password), transaction ID, activation code, SMS code, Invitation key, React component key, Database random ID** etc. Your imagination is your limitation. 🎉🎉
+Resolve deprecation warning; update dependancy packages to remove npm vulnerability warning; and added a few generation options.
 
-## Installation
+```js
+customId({
+  name: "Jhon Doe", // Optional
+  email: "jhondoe@gmail.com", // Optional
+  randomLength: 2, // Optional
+  lowerCase: true // Optional
+  //New options are :
+  prefix:'PRFX',// Optional - prefix the id
+  sufix:'SFX',// Optional - sufix the id
+  alphaFirst:true // Optional - start with aphabetic chars
+});
+```
 
-You can download this package from here - [custom-id npm](https://www.npmjs.com/package/custom-id)
+## Wy new package name ?
+
+Unfortunately pull requests to original custom-id are pending... In the meantime at Numerum we will be using this package name for installation : ([n-custom-id](https://www.npmjs.com/package/n-custom-id)). Feel free to do like us.
+
+npm installation
 
 ```bash
-npm i custom-id
+npm i n-custom-id
+```
+
+yarn installation
+
+```bash
+yarn add n-custom-id
+```
+
+## Original version Installation
+
+You can still download they original package from here - [custom-id npm](https://www.npmjs.com/package/custom-id)
+
+```bash
+npm i n-custom-id
 ```
 
 Yarn installation
 
 ```bash
-yarn add custom-id
+yarn add n-custom-id
 ```
 
-![installation of custom-id](https://i.ibb.co/J74bsqV/Screenshot-268.png)
+
+
+# Use Case
+
+As it's human-friendly you can use it as **an OTP(one-time password), transaction ID, activation code, SMS code, Invitation key, React component key, Database random ID** etc. Your imagination is your limitation. 🎉🎉
 
 ## Usage
 
@@ -54,6 +87,10 @@ customId({
   email: "jhondoe@gmail.com", // Optional
   randomLength: 2, // Optional
   lowerCase: true // Optional
+  //New options
+  prefix:'PRFX',// Optional - prefix the with whatever string you want
+  sufix:'SFX',// Optional - sufix the id with whatever string you want
+  alphaFirst:true // Optional - start with aphabetic chars
 });
 ```
 
